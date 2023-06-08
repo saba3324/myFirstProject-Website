@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teamable</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="app.js"></script>
+        <meta charset="utf-8" />
+        <script src="node_modules/validator/validator.min.js"></script>
+        <link rel="stylesheet" href="node_modules/Datepicker.js/dist/css/datepicker.material.css">
+        <script src="node_modules/Datepicker.js/dist/datepicker.js"></script>
+    </head>
+    <body>
+        <div id="display-view">
+            <h1>User profile</h1>
+            <img src="profile.jpeg">
+            
+            <span>Name: </span><b id="name">Saba Usman</b>
+            <hr />
+
+            <span>Email: </span><b id="email">sabausman@example.com</b>
+            <hr />
+
+            <span>Interests: </span><b id="interests">Devops</b>
+            <hr />
+
+            <button onclick="handleEditProfile()">Edit Profile</button>
+        </div>
+        <div id="edit-view">
+            <h1>User profile</h1>
+            <img src="profile.jpeg">
+            
+            <span>Name: </span>
+            <input type="text" id="input-name" placeholder="Saba Usman"/>
+            <hr />
+
+            <span>Email: </span>
+            <input type="text" id="input-email" placeholder="sabausman@example.com" />
+            <hr />
+
+            <span>Interests: </span>
+            <input type="text" id="input-interests" placeholder="DevOps" />
+            <hr />
+
+            <span>Birthday date: </span>
+            <input type="text" id="birthday">
+            <hr />
+            
+            <button onclick="handleUpdateProfile()">Update Profile</button>
+        </div>
+    </body>
+</html>
