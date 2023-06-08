@@ -7,9 +7,9 @@ app.use('/', express.static(__dirname + '/dist'))
 
 app.get('/get-profile', function(req, res) {
     const response = {
-        name: "Anna Smith",
-        email: "anna.smith@example.com",
-        interests: "coding"
+        name: "Saba Usman",
+        email: "sabausman@example.com",
+        interests: "DevOps"
     }
     res.send(response)
 })
